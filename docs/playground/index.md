@@ -9,10 +9,10 @@ Interactive demos for React Render Controls components. Click on any component b
 
 ## Components
 
-- [RenderList Demos](./render-list) - List rendering with function and component patterns
-- [RenderIf Demos](./render-if) - Conditional rendering with if/else patterns
-- [RenderMatch Demos](./render-match) - Pattern matching for status-based rendering
-- [RenderSwitch Demos](./render-switch) - Switch-style conditional rendering
+- [RenderList Demos](./render-list.md) - List rendering with function and component patterns
+- [RenderIf Demos](./render-if.md) - Conditional rendering with if/else patterns
+- [RenderMatch Demos](./render-match.md) - Pattern matching for status-based rendering
+- [RenderSwitch Demos](./render-switch.md) - Switch-style conditional rendering
 
 ## Features
 

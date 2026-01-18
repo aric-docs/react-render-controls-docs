@@ -1,0 +1,39 @@
+# AI: https://chat.qwen.ai/c/25e9d10b-e4dc-4cc8-be73-50fbf7ae862b
+
+name: Deploy Dumi Site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 根据你的主分支名调整，如 main / master
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write  # 必须授权写权限，否则 GITHUB_TOKEN 无法推送
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # dumi 推荐 Node >=18
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Dumi site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs-dist  # dumi 默认输出目录
