@@ -35,36 +35,29 @@ Simplified list rendering component that handles empty states and automatically 
 ```
 
 ### [RenderMatch](./render-match)
-Pattern matching component for complex conditional logic based on value matching.
+Pattern matching component that renders the child matching the given value.
 
 **Best for**: Multi-way conditionals, switch-like patterns
 
 ```tsx
-<RenderMatch
-  on={status}
-  matches={{
-    loading: <Loader />,
-    success: <Success />,
-    error: <Error />
-  }}
-/>
+<RenderMatch value={status} items={['loading', 'success', 'error']}>
+  <Loader />
+  <Success />
+  <Error />
+</RenderMatch>
 ```
 
 ### [RenderSwitch](./render-switch)
-Advanced pattern matching with predicates and support for complex conditions.
+Switch-style conditional rendering with multiple conditions and fallback support.
 
-**Best for**: Complex multi-condition rendering, predicate-based matching
+**Best for**: Complex multi-condition rendering, multiple boolean conditions
 
 ```tsx
-<RenderSwitch
-  value={user}
-  cases={[
-    { when: (u) => u.isAdmin, render: <AdminPanel /> },
-    { when: (u) => u.isPremium, render: <PremiumPanel /> },
-    { when: (u) => u.isUser, render: <UserPanel /> }
-  ]}
-  default={<GuestPanel />}
-/>
+<RenderSwitch cases={[isAdmin, isPremium, isUser]} fallback={<GuestPanel />}>
+  <AdminPanel />
+  <PremiumPanel />
+  <UserPanel />
+</RenderSwitch>
 ```
 
 ## Quick Comparison

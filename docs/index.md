@@ -38,7 +38,7 @@ npm install @jswork/react-render-controls
 ## Quick Start
 
 ```tsx
-import { RenderIf, RenderList } from '@jswork/react-render-controls';
+import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
 
 // Conditional rendering
 <RenderIf when={isLoggedIn}>
@@ -47,4 +47,17 @@ import { RenderIf, RenderList } from '@jswork/react-render-controls';
 
 // List rendering
 <RenderList items={users} render={(user) => <UserCard user={user} />} keyBy="id" />
+
+// Pattern matching
+<RenderMatch value={status} items={['loading', 'success', 'error']}>
+  <Loader />
+  <Success />
+  <Error />
+</RenderMatch>
+
+// Advanced pattern matching
+<RenderSwitch cases={[isAdmin, isPremium]} fallback={<GuestPanel />}>
+  <AdminPanel />
+  <PremiumPanel />
+</RenderSwitch>
 ```
