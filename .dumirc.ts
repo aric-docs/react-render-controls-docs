@@ -31,6 +31,9 @@ export default defineConfig({
       },
     ],
     nprogress: true,
+    socialLinks: {
+      github: 'https://github.com/afeiship/react-render-controls',
+    },
   },
   styles: [
     `
