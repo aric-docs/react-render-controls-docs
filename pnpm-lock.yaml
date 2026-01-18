@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@jswork/react-render-controls':
+        specifier: ^1.2.1
+        version: 1.2.1(classnames@2.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@commitlint/cli':
         specifier: ^17.1.2
@@ -797,6 +801,13 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
+
+  '@jswork/react-render-controls@1.2.1':
+    resolution: {integrity: sha512-oLdeA46JIROB0B4QuzN3w+2XL6SB1ryer/WVov2x2c+OkRmH0LjvU0tOQktnlccXleVB+7l5eeTik2VfrNANDQ==}
+    peerDependencies:
+      classnames: '*'
+      react: '*'
+      react-dom: '*'
 
   '@loadable/component@5.15.2':
     resolution: {integrity: sha512-ryFAZOX5P2vFkUdzaAtTG88IGnr9qxSdvLRvJySXcUA4B4xVWurUNADu3AnKPksxOZajljqTrDEDcYjeL4lvLw==}
@@ -7296,6 +7307,12 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@jswork/react-render-controls@1.2.1(classnames@2.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      classnames: 2.3.2
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@loadable/component@5.15.2(react@18.3.1)':
     dependencies:

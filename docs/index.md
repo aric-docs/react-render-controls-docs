@@ -1,23 +1,50 @@
 ---
-title: A static site based on dumi
+title: React Render Controls
 hero:
-  title: Site
-  description: react-render-controls docs.
+  title: React Render Controls
+  description: A lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: Get Started
+      link: /guide/getting-started
+    - text: GitHub
+      link: https://github.com/afeiship/react-render-controls
 features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
+  - title: Lightweight
+    emoji: ⚡
+    description: Zero runtime overhead, tree-shakable components with minimal dependencies
+  - title: Headless
+    emoji: 🎨
+    description: Logic-only components with no built-in styling, full control over your UI
+  - title: Type-Safe
+    emoji: 🔒
+    description: Full TypeScript support with comprehensive type definitions
+  - title: SSR Friendly
+    emoji: 🌐
+    description: Server-side rendering ready with no hydration issues
+  - title: Declarative
+    emoji: 📝
+    description: Clean, readable syntax for conditional rendering and pattern matching
+  - title: Flexible
+    emoji: 🧩
+    description: Multiple rendering patterns - functions, components, and more
 ---
 
-react-render-controls-docs
+## Installation
+
+```bash
+npm install @jswork/react-render-controls
+```
+
+## Quick Start
+
+```tsx
+import { RenderIf, RenderList } from '@jswork/react-render-controls';
+
+// Conditional rendering
+<RenderIf when={isLoggedIn}>
+  <Dashboard />
+</RenderIf>
+
+// List rendering
+<RenderList items={users} render={(user) => <UserCard user={user} />} keyBy="id" />
+```
