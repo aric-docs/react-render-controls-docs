@@ -17,17 +17,22 @@ export default defineConfig({
       },
       {
         title: 'Components',
-        children: [
-          { title: 'RenderList', link: '/components/render-list' },
-          { title: 'RenderIf', link: '/components/render-if' },
-          { title: 'RenderMatch', link: '/components/render-match' },
-          { title: 'RenderSwitch', link: '/components/render-switch' },
-        ],
+        link: '/components/render-list',
       },
       {
         title: 'API',
         link: '/api',
       },
     ],
+    nprogress: true,
   },
+  styles: [
+    `
+    .dumi-default-sidebar {
+      --dumi-sidebar-width: 280px !important;
+      width: 280px !important;
+      min-width: 280px !important;
+    }
+    `,
+  ],
 });

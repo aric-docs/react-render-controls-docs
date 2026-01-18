@@ -1,7 +1,7 @@
 ---
-title: React Render Controls
+title: RRC
 hero:
-  title: React Render Controls
+  title: RRC
   description: A lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.
   actions:
     - text: Get Started
