@@ -5,18 +5,19 @@ order: 3
 
 # RenderSwitch
 
-Switch-style conditional rendering with multiple conditions and fallback support.
+Switch-style conditional rendering with multiple conditions, fallback support, and optional multi-match mode.
 
 ## Features
 
 - **Multiple case conditions**: Test multiple boolean conditions in order
-- **First matching case wins**: Stops at the first true condition
+- **First matching case wins** (default): Stops at the first true condition
+- **Multiple matches mode**: When `multiple=true`, renders all matching children
 - **Optional fallback**: Render content when no cases match
 - **Development warnings**: Alerts for cases/children mismatch
 
 ## Basic Usage
 
-### Basic Usage
+### Basic Usage - Render Only First Match
 
 ```tsx
 import { RenderSwitch } from '@jswork/react-render-controls';
@@ -31,6 +32,8 @@ function Dashboard({ user }) {
   );
 }
 ```
+
+Only renders the first matching child.
 
 ### With Fallback
 
@@ -55,6 +58,7 @@ When no cases match, the `fallback` is rendered.
 | `cases` | `readonly boolean[]` | Yes | - | Array of boolean conditions |
 | `children` | `ReactNode` | Yes | - | Children corresponding to cases |
 | `fallback` | `ReactNode` | No | - | Fallback content when no cases match |
+| `multiple` | `boolean` | No | `false` | When `true`, render all matches; when `false`, only first match |
 
 ### Types
 
@@ -63,10 +67,30 @@ interface RenderSwitchProps {
   cases: readonly boolean[];
   children: ReactNode;
   fallback?: ReactNode;
+  multiple?: boolean;
 }
 ```
 
 ## Examples
+
+### Multiple Mode - Render All Matches
+
+When `multiple` is `true`, all matching children are rendered:
+
+```tsx
+const hasRead = user.permissions.includes('read');
+const hasWrite = user.permissions.includes('write');
+const hasDelete = user.permissions.includes('delete');
+
+<RenderSwitch cases={[hasRead, hasWrite, hasDelete]} multiple>
+  <ReadPermission />
+  <WritePermission />
+  <DeletePermission />
+</RenderSwitch>
+```
+
+If `hasRead=true`, `hasWrite=true`, `hasDelete=false`:
+- Renders both `<ReadPermission />` and `<WritePermission />`
 
 ### Loading States
 

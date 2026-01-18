@@ -11,6 +11,10 @@ Interactive demos for the RenderSwitch component.
 
 <code src="./demos/render-switch-basic.tsx">Basic Switch</code>
 
+## Multiple Mode
+
+<code src="./demos/render-switch-multiple.tsx">Multiple Mode</code>
+
 ## Permission Levels
 
 <code src="./demos/render-switch-permission.tsx">Permission Levels</code>

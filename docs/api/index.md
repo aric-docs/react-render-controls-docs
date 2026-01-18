@@ -150,14 +150,16 @@ interface RenderSwitchProps {
   cases: readonly boolean[];
   children: ReactNode;
   fallback?: ReactNode;
+  multiple?: boolean;
 }
 ```
 
 ### Behavior
 
 - Evaluates each boolean in `cases` array in order
-- Renders the child at the first `true` index
-- Renders `fallback` if no cases match
+- **When `multiple` is `false` (default)**: Renders only the child at the first `true` index
+- **When `multiple` is `true`**: Renders all children whose corresponding case is `true`
+- Renders `fallback` if no cases match (and `multiple` is `false`)
 - If no `fallback` provided, renders `null` when no cases match
 
 ### Development Warnings

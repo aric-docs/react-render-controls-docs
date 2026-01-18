@@ -99,6 +99,16 @@ function UserRolePanel({ user }) {
 }
 ```
 
+## Import Styles (Optional)
+
+If you need the default styles, you can import them:
+
+```tsx
+import '@jswork/react-render-controls/dist/style.css';
+```
+
+Note: This is optional. The components are headless and have no built-in styling by default.
+
 ## TypeScript Support
 
 All components are fully typed. Import types as needed:
