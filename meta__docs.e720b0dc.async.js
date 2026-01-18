@@ -1,4 +1,4 @@
-(self.webpackChunkreact_render_controls_docs=self.webpackChunkreact_render_controls_docs||[]).push([[904],{81735:function(i,t,e){"use strict";e.r(t),e.d(t,{RenderIf:function(){return O},RenderList:function(){return P},RenderMatch:function(){return k},RenderSwitch:function(){return j}});var r=e(75271),h=e(14224),s=Object.defineProperty,b=Object.defineProperties,g=Object.getOwnPropertyDescriptors,d=Object.getOwnPropertySymbols,f=Object.prototype.hasOwnProperty,y=Object.prototype.propertyIsEnumerable,l=(I,m,v)=>m in I?s(I,m,{enumerable:!0,configurable:!0,writable:!0,value:v}):I[m]=v,p=(I,m)=>{for(var v in m||(m={}))f.call(m,v)&&l(I,v,m[v]);if(d)for(var v of d(m))y.call(m,v)&&l(I,v,m[v]);return I},u=(I,m)=>b(I,g(m)),a=(I,m)=>s(I,"name",{value:m,configurable:!0}),o,c=typeof h!="undefined"&&((o={NODE_ENV:"production",PUBLIC_PATH:"/react-render-controls-docs/"})==null?void 0:o.NODE_ENV)!=="production";function n(I){return typeof I=="function"}a(n,"isRenderFn");function S(I,m,v,x){if(x===void 0)return m;if(typeof x=="function")return x(I,m,v);let R=I[x];return R==null?(c&&console.warn(`RenderList: keyBy="${String(x)}" but the field is undefined in ${JSON.stringify(I)}`),m):R}a(S,"getKey");function P({items:I,render:m,keyBy:v}){return r.createElement(r.Fragment,null,I.map((x,R)=>{let w=S(x,R,I,v);if(n(m))return r.createElement(r.Fragment,{key:w},m(x,R,I));let{component:M,dataKey:U="item",props:N={}}=m,F=u(p({},N),{[U]:x});return r.createElement(r.Fragment,{key:w},r.createElement(M,F))}))}a(P,"RenderList");function C({when:I,children:m}){let v=r.Children.toArray(m);return v.length===0?null:(v.length>2&&c&&console.warn(`RenderIf: Expected at most 2 children, but got ${v.length}. Only the first 2 children will be used.`),v.length===1?I?v[0]:null:I?v[0]:v[1])}a(C,"RenderIf");var O=C;function L(I,m){for(let v=0;v<m.length;v++){let x=m[v];if(typeof x=="string"){if(x===I)return v}else if(x.includes(I))return v}return-1}a(L,"findMatchIndex");function E(I){let m=[];for(let v of I)typeof v=="string"?m.push(v):m.push(...v);return m}a(E,"getAllValues");function T({value:I,items:m,children:v}){var x;let R=L(I,m);if(R===-1){if(c){let M=E(m);console.warn(`RenderMatch: Value "${I}" not found in any of the items. Available values: [${M.join(", ")}]`)}return null}let w=r.Children.toArray(v).filter(M=>(0,r.isValidElement)(M));return R>=w.length?(c&&console.warn(`RenderMatch: Not enough children provided. Expected at least ${R+1}, but got ${w.length}.`),null):(x=w[R])!=null?x:null}a(T,"RenderMatch");var k=T;function D(I){for(let m=0;m<I.length;m++)if(I[m])return m;return-1}a(D,"findTrueCaseIndex");function A(I,m,v){c&&I>m&&console.warn(`${v}: More cases (${I}) than children (${m}). Extra cases will be ignored.`)}a(A,"validateCasesLength");function B({cases:I,children:m,fallback:v=null}){let x=r.Children.toArray(m).filter(w=>(0,r.isValidElement)(w));A(I.length,x.length,"RenderSwitch");let R=D(I);return R>=0&&R<x.length?x[R]:v}a(B,"RenderSwitch");var j=B},51998:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},86455:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},80443:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},71620:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},49697:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},22796:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},33953:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},51552:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},6657:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},32047:function(i,t,e){"use strict";e.r(t),e.d(t,{demos:function(){return h}});var r=e(75271),h={}},62310:function(i,t,e){"use strict";var r;e.r(t),e.d(t,{demos:function(){return y}});var h=e(90228),s=e.n(h),b=e(87999),g=e.n(b),d=e(75271),f=e(81735),y={"docs-playground-render-if-demo-render-if-basic":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,49147))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(45374).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Toggle"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-else":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,49165))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-else",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(18036).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Authentication"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-multiple":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,96209))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-multiple",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(18923).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Role-Based Display"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-loading":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,18656))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-loading",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(11684).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Data Fetching"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-feature":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,94334))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-feature",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(37111).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Feature Flags"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}}}},54134:function(i,t,e){"use strict";var r;e.r(t),e.d(t,{demos:function(){return y}});var h=e(90228),s=e.n(h),b=e(87999),g=e.n(b),d=e(75271),f=e(81735),y={"docs-playground-render-list-demo-render-list-basic":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,69104))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(66925).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"}},entry:"index.tsx",title:"Simple List"},context:{"@jswork/react-render-controls":f},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-index":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,14152))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-index",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(56409).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"}},entry:"index.tsx",title:"Numbered List"},context:{"@jswork/react-render-controls":f},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-object":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,58685))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-object",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(42404).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"}},entry:"index.tsx",title:"User List"},context:{"@jswork/react-render-controls":f},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-interactive":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,1649))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-interactive",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(21917).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Todo List"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-all-items":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,92570))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-all-items",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(13297).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"}},entry:"index.tsx",title:"Scores with Average"},context:{"@jswork/react-render-controls":f},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-component":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,34440))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-component",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(89160).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"}},entry:"index.tsx",title:"Component Style"},context:{"@jswork/react-render-controls":f},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}}}},48542:function(i,t,e){"use strict";var r;e.r(t),e.d(t,{demos:function(){return y}});var h=e(90228),s=e.n(h),b=e(87999),g=e.n(b),d=e(75271),f=e(81735),y={"docs-playground-render-match-demo-render-match-basic-status":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,75932))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-basic-status",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(99753).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Status Matching"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-multiple-values":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,24266))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-multiple-values",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(44856).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Multiple Values Per Match"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-http-status":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,86402))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-http-status",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(85497).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"HTTP Status Codes"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-theme-variant":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,31067))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-theme-variant",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(72264).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Theme Variant Selector"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-user-role":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,25565))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-user-role",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(84771).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"User Role Badges"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}}}},10548:function(i,t,e){"use strict";var r;e.r(t),e.d(t,{demos:function(){return y}});var h=e(90228),s=e.n(h),b=e(87999),g=e.n(b),d=e(75271),f=e(81735),y={"docs-playground-render-switch-demo-render-switch-basic":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,71613))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(16016).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Switch"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-switch-demo-render-switch-permission":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,98163))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-permission",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(36578).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Permission Levels"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-switch-demo-render-switch-connection":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,1462))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-connection",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(34875).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Connection Status"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-switch-demo-render-switch-form-validation":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,68800))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-form-validation",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(92245).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Form Validation States"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-switch-demo-render-switch-device-type":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,57535))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-device-type",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(45878).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Device Type Detection"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}},"docs-playground-render-switch-demo-render-switch-time-greeting":{component:d.memo(d.lazy(function(){return e.e(433).then(e.bind(e,62616))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-time-greeting",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(55350).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.1"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Time-based Greeting"},context:{"@jswork/react-render-controls":f,react:r||(r=e.t(d,2))},renderOpts:{compile:function(){var l=g()(s()().mark(function u(){var a,o=arguments;return s()().wrap(function(n){for(;;)switch(n.prev=n.next){case 0:return n.next=2,e.e(417).then(e.bind(e,10417));case 2:return n.abrupt("return",(a=n.sent).default.apply(a,o));case 3:case"end":return n.stop()}},u)}));function p(){return l.apply(this,arguments)}return p}()}}}},12616:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Complete type definitions and API documentation for all components.",paraId:0,tocIndex:0},{value:`import {
+(self.webpackChunkreact_render_controls_docs=self.webpackChunkreact_render_controls_docs||[]).push([[904],{79543:function(c,n,e){"use strict";e.r(n),e.d(n,{RenderIf:function(){return O},RenderList:function(){return M},RenderMatch:function(){return j},RenderSwitch:function(){return N}});var r=e(75271),x=e(14224),l=Object.defineProperty,S=Object.defineProperties,g=Object.getOwnPropertyDescriptors,a=Object.getOwnPropertySymbols,h=Object.prototype.hasOwnProperty,y=Object.prototype.propertyIsEnumerable,f=(I,m,v)=>m in I?l(I,m,{enumerable:!0,configurable:!0,writable:!0,value:v}):I[m]=v,p=(I,m)=>{for(var v in m||(m={}))h.call(m,v)&&f(I,v,m[v]);if(a)for(var v of a(m))y.call(m,v)&&f(I,v,m[v]);return I},u=(I,m)=>S(I,g(m)),d=(I,m)=>l(I,"name",{value:m,configurable:!0}),o,s=typeof x!="undefined"&&((o={NODE_ENV:"production",PUBLIC_PATH:"/react-render-controls-docs/"})==null?void 0:o.NODE_ENV)!=="production";function t(I){return typeof I=="function"}d(t,"isRenderFn");function i(I,m,v,R){if(R===void 0)return m;if(typeof R=="function")return R(I,m,v);let b=I[R];return b==null?(s&&console.warn(`RenderList: keyBy="${String(R)}" but the field is undefined in ${JSON.stringify(I)}`),m):b}d(i,"getKey");function M({items:I,render:m,keyBy:v}){return r.createElement(r.Fragment,null,I.map((R,b)=>{let w=i(R,b,I,v);if(t(m))return r.createElement(r.Fragment,{key:w},m(R,b,I));let{component:P,dataKey:U="item",props:W={}}=m,F=u(p({},W),{[U]:R});return r.createElement(r.Fragment,{key:w},r.createElement(P,F))}))}d(M,"RenderList");function C({when:I,children:m}){let v=r.Children.toArray(m);return v.length===0?null:(v.length>2&&s&&console.warn(`RenderIf: Expected at most 2 children, but got ${v.length}. Only the first 2 children will be used.`),v.length===1?I?v[0]:null:I?v[0]:v[1])}d(C,"RenderIf");var O=C;function L(I,m){for(let v=0;v<m.length;v++){let R=m[v];if(typeof R=="string"){if(R===I)return v}else if(R.includes(I))return v}return-1}d(L,"findMatchIndex");function E(I){let m=[];for(let v of I)typeof v=="string"?m.push(v):m.push(...v);return m}d(E,"getAllValues");function D({value:I,items:m,children:v}){var R;let b=L(I,m);if(b===-1){if(s){let P=E(m);console.warn(`RenderMatch: Value "${I}" not found in any of the items. Available values: [${P.join(", ")}]`)}return null}let w=r.Children.toArray(v).filter(P=>(0,r.isValidElement)(P));return b>=w.length?(s&&console.warn(`RenderMatch: Not enough children provided. Expected at least ${b+1}, but got ${w.length}.`),null):(R=w[b])!=null?R:null}d(D,"RenderMatch");var j=D;function T(I){for(let m=0;m<I.length;m++)if(I[m])return m;return-1}d(T,"findTrueCaseIndex");function A(I){let m=[];for(let v=0;v<I.length;v++)I[v]&&m.push(v);return m}d(A,"findAllTrueCaseIndices");function k(I,m,v){s&&I>m&&console.warn(`${v}: More cases (${I}) than children (${m}). Extra cases will be ignored.`)}d(k,"validateCasesLength");function B({cases:I,children:m,fallback:v=null,multiple:R=!1}){let b=r.Children.toArray(m).filter(w=>(0,r.isValidElement)(w));if(k(I.length,b.length,"RenderSwitch"),R){let w=A(I).filter(P=>P>=0&&P<b.length).map(P=>b[P]);if(w.length>0)return r.createElement(r.Fragment,null,w)}else{let w=T(I);if(w>=0&&w<b.length)return b[w]}return v}d(B,"RenderSwitch");var N=B},51998:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},86455:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},80443:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},71620:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},49697:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},22796:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},33953:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},51552:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},6657:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},32047:function(c,n,e){"use strict";e.r(n),e.d(n,{demos:function(){return x}});var r=e(75271),x={}},62310:function(c,n,e){"use strict";var r;e.r(n),e.d(n,{demos:function(){return y}});var x=e(90228),l=e.n(x),S=e(87999),g=e.n(S),a=e(75271),h=e(79543),y={"docs-playground-render-if-demo-render-if-basic":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,49147))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(45374).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Toggle"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-else":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,49165))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-else",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(18036).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Authentication"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-multiple":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,96209))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-multiple",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(18923).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Role-Based Display"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-loading":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,18656))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-loading",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(11684).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Data Fetching"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-if-demo-render-if-feature":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,94334))})),asset:{type:"BLOCK",id:"docs-playground-render-if-demo-render-if-feature",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(37111).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Feature Flags"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}}}},54134:function(c,n,e){"use strict";var r;e.r(n),e.d(n,{demos:function(){return y}});var x=e(90228),l=e.n(x),S=e(87999),g=e.n(S),a=e(75271),h=e(79543),y={"docs-playground-render-list-demo-render-list-basic":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,69104))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(66925).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"}},entry:"index.tsx",title:"Simple List"},context:{"@jswork/react-render-controls":h},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-index":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,14152))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-index",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(56409).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"}},entry:"index.tsx",title:"Numbered List"},context:{"@jswork/react-render-controls":h},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-object":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,58685))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-object",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(42404).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"}},entry:"index.tsx",title:"User List"},context:{"@jswork/react-render-controls":h},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-interactive":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,1649))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-interactive",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(21917).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Todo List"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-all-items":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,92570))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-all-items",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(13297).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"}},entry:"index.tsx",title:"Scores with Average"},context:{"@jswork/react-render-controls":h},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-list-demo-render-list-component":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,34440))})),asset:{type:"BLOCK",id:"docs-playground-render-list-demo-render-list-component",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(89160).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"}},entry:"index.tsx",title:"Component Style"},context:{"@jswork/react-render-controls":h},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}}}},48542:function(c,n,e){"use strict";var r;e.r(n),e.d(n,{demos:function(){return y}});var x=e(90228),l=e.n(x),S=e(87999),g=e.n(S),a=e(75271),h=e(79543),y={"docs-playground-render-match-demo-render-match-basic-status":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,75932))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-basic-status",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(99753).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Status Matching"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-multiple-values":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,24266))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-multiple-values",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(44856).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Multiple Values Per Match"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-http-status":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,86402))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-http-status",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(85497).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"HTTP Status Codes"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-theme-variant":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,31067))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-theme-variant",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(72264).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Theme Variant Selector"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}},"docs-playground-render-match-demo-render-match-user-role":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,25565))})),asset:{type:"BLOCK",id:"docs-playground-render-match-demo-render-match-user-role",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(84771).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"User Role Badges"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var f=g()(l()().mark(function u(){var d,o=arguments;return l()().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.next=2,e.e(417).then(e.bind(e,10417));case 2:return t.abrupt("return",(d=t.sent).default.apply(d,o));case 3:case"end":return t.stop()}},u)}));function p(){return f.apply(this,arguments)}return p}()}}}},10548:function(c,n,e){"use strict";var r;e.r(n),e.d(n,{demos:function(){return f}});var x=e(90228),l=e.n(x),S=e(87999),g=e.n(S),a=e(75271),h=e(79543),y=e(17533),f={"docs-playground-render-switch-demo-render-switch-basic":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,71613))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-basic",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(16016).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Basic Switch"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-multiple":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,61542))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-multiple",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(88919).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"},"./render-switch-multiple.scss":{type:"FILE",value:e(4787).Z}},entry:"index.tsx",description:"Render all matching children when multiple is true",title:"Multiple Mode"},context:{"./render-switch-multiple.scss":y,"@jswork/react-render-controls":h,react:r||(r=e.t(a,2)),"/home/runner/work/react-render-controls-docs/react-render-controls-docs/docs/playground/demos/render-switch-multiple.scss":y},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-permission":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,98163))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-permission",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(36578).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Permission Levels"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-connection":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,1462))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-connection",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(34875).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Connection Status"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-form-validation":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,68800))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-form-validation",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(92245).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Form Validation States"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-device-type":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,57535))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-device-type",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(45878).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Device Type Detection"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}},"docs-playground-render-switch-demo-render-switch-time-greeting":{component:a.memo(a.lazy(function(){return e.e(433).then(e.bind(e,62616))})),asset:{type:"BLOCK",id:"docs-playground-render-switch-demo-render-switch-time-greeting",refAtomIds:[],dependencies:{"index.tsx":{type:"FILE",value:e(55350).Z},"@jswork/react-render-controls":{type:"NPM",value:"1.2.3"},react:{type:"NPM",value:"18.3.1"}},entry:"index.tsx",title:"Time-based Greeting"},context:{"@jswork/react-render-controls":h,react:r||(r=e.t(a,2))},renderOpts:{compile:function(){var p=g()(l()().mark(function d(){var o,s=arguments;return l()().wrap(function(i){for(;;)switch(i.prev=i.next){case 0:return i.next=2,e.e(417).then(e.bind(e,10417));case 2:return i.abrupt("return",(o=i.sent).default.apply(o,s));case 3:case"end":return i.stop()}},d)}));function u(){return p.apply(this,arguments)}return u}()}}}},17533:function(c,n,e){"use strict";e.r(n)},12616:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Complete type definitions and API documentation for all components.",paraId:0,tocIndex:0},{value:`import {
   RenderList,
   RenderIf,
   RenderMatch,
@@ -61,8 +61,9 @@ type MatchValue = string | readonly string[];
   cases: readonly boolean[];
   children: ReactNode;
   fallback?: ReactNode;
+  multiple?: boolean;
 }
-`,paraId:13,tocIndex:17},{value:"Evaluates each boolean in ",paraId:14,tocIndex:18},{value:"cases",paraId:14,tocIndex:18},{value:" array in order",paraId:14,tocIndex:18},{value:"Renders the child at the first ",paraId:14,tocIndex:18},{value:"true",paraId:14,tocIndex:18},{value:" index",paraId:14,tocIndex:18},{value:"Renders ",paraId:14,tocIndex:18},{value:"fallback",paraId:14,tocIndex:18},{value:" if no cases match",paraId:14,tocIndex:18},{value:"If no ",paraId:14,tocIndex:18},{value:"fallback",paraId:14,tocIndex:18},{value:" provided, renders ",paraId:14,tocIndex:18},{value:"null",paraId:14,tocIndex:18},{value:" when no cases match",paraId:14,tocIndex:18},{value:"Warns if cases array is empty",paraId:15,tocIndex:19},{value:"Warns if cases length doesn't match children length",paraId:15,tocIndex:19},{value:`type ReactNode = React.ReactNode;
+`,paraId:13,tocIndex:17},{value:"Evaluates each boolean in ",paraId:14,tocIndex:18},{value:"cases",paraId:14,tocIndex:18},{value:" array in order",paraId:14,tocIndex:18},{value:"When ",paraId:14,tocIndex:18},{value:"multiple",paraId:14,tocIndex:18},{value:" is ",paraId:14,tocIndex:18},{value:"false",paraId:14,tocIndex:18},{value:" (default)",paraId:14,tocIndex:18},{value:": Renders only the child at the first ",paraId:14,tocIndex:18},{value:"true",paraId:14,tocIndex:18},{value:" index",paraId:14,tocIndex:18},{value:"When ",paraId:14,tocIndex:18},{value:"multiple",paraId:14,tocIndex:18},{value:" is ",paraId:14,tocIndex:18},{value:"true",paraId:14,tocIndex:18},{value:": Renders all children whose corresponding case is ",paraId:14,tocIndex:18},{value:"true",paraId:14,tocIndex:18},{value:"Renders ",paraId:14,tocIndex:18},{value:"fallback",paraId:14,tocIndex:18},{value:" if no cases match (and ",paraId:14,tocIndex:18},{value:"multiple",paraId:14,tocIndex:18},{value:" is ",paraId:14,tocIndex:18},{value:"false",paraId:14,tocIndex:18},{value:")",paraId:14,tocIndex:18},{value:"If no ",paraId:14,tocIndex:18},{value:"fallback",paraId:14,tocIndex:18},{value:" provided, renders ",paraId:14,tocIndex:18},{value:"null",paraId:14,tocIndex:18},{value:" when no cases match",paraId:14,tocIndex:18},{value:"Warns if cases array is empty",paraId:15,tocIndex:19},{value:"Warns if cases length doesn't match children length",paraId:15,tocIndex:19},{value:`type ReactNode = React.ReactNode;
 `,paraId:16,tocIndex:21},{value:"Standard React node type including elements, strings, numbers, fragments, etc.",paraId:17,tocIndex:21},{value:`type ElementType<P = any> = React.ElementType<P>;
 `,paraId:18,tocIndex:22},{value:"Standard React element type for components.",paraId:19,tocIndex:22},{value:`interface User {
   id: number;
@@ -133,7 +134,7 @@ function StatusDisplay({ status }: { status: Status }) {
   // RenderSwitch types
   RenderSwitchProps
 } from '@jswork/react-render-controls';
-`,paraId:26,tocIndex:28}]},27580:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"A collection of React components for declarative rendering control. Simplify conditional rendering, list rendering, and pattern matching in your React applications.",paraId:0,tocIndex:0},{value:"RenderIf",paraId:1,tocIndex:1},{value:"Conditional rendering component supporting if/else patterns with automatic warning for invalid usage.",paraId:2,tocIndex:2},{value:"Best for",paraId:3,tocIndex:2},{value:": Simple conditional rendering, if/else patterns",paraId:3,tocIndex:2},{value:`<RenderIf when={isLoggedIn}>
+`,paraId:26,tocIndex:28}]},27580:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"A collection of React components for declarative rendering control. Simplify conditional rendering, list rendering, and pattern matching in your React applications.",paraId:0,tocIndex:0},{value:"RenderIf",paraId:1,tocIndex:1},{value:"Conditional rendering component supporting if/else patterns with automatic warning for invalid usage.",paraId:2,tocIndex:2},{value:"Best for",paraId:3,tocIndex:2},{value:": Simple conditional rendering, if/else patterns",paraId:3,tocIndex:2},{value:`<RenderIf when={isLoggedIn}>
   <Dashboard />
   <Login />
 </RenderIf>
@@ -154,7 +155,7 @@ function StatusDisplay({ status }: { status: Status }) {
 </RenderSwitch>
 `,paraId:16,tocIndex:5},{value:"Component",paraId:17,tocIndex:6},{value:"Use Case",paraId:17,tocIndex:6},{value:"Complexity",paraId:17,tocIndex:6},{value:"Flexibility",paraId:17,tocIndex:6},{value:"RenderIf",paraId:17,tocIndex:6},{value:"Simple conditions",paraId:17,tocIndex:6},{value:"Low",paraId:17,tocIndex:6},{value:"Limited",paraId:17,tocIndex:6},{value:"RenderList",paraId:17,tocIndex:6},{value:"List rendering",paraId:17,tocIndex:6},{value:"Low",paraId:17,tocIndex:6},{value:"Medium",paraId:17,tocIndex:6},{value:"RenderMatch",paraId:17,tocIndex:6},{value:"Value matching",paraId:17,tocIndex:6},{value:"Medium",paraId:17,tocIndex:6},{value:"Medium",paraId:17,tocIndex:6},{value:"RenderSwitch",paraId:17,tocIndex:6},{value:"Complex patterns",paraId:17,tocIndex:6},{value:"High",paraId:17,tocIndex:6},{value:"High",paraId:17,tocIndex:6},{value:`npm install @jswork/react-render-controls
 `,paraId:18,tocIndex:7},{value:`import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
-`,paraId:19,tocIndex:8},{value:"You have simple true/false conditions",paraId:20,tocIndex:10},{value:"You need if/else patterns",paraId:20,tocIndex:10},{value:"You want clean, readable conditional rendering",paraId:20,tocIndex:10},{value:"You need to render arrays of data",paraId:21,tocIndex:11},{value:"You want automatic empty state handling",paraId:21,tocIndex:11},{value:"You need to map over items consistently",paraId:21,tocIndex:11},{value:"You have multiple conditions based on a single value",paraId:22,tocIndex:12},{value:"You want cleaner code than nested ternaries",paraId:22,tocIndex:12},{value:"You need to match specific values or patterns",paraId:22,tocIndex:12},{value:"You have complex conditional logic",paraId:23,tocIndex:13},{value:"You need predicate-based matching",paraId:23,tocIndex:13},{value:"You want the most flexibility for conditions",paraId:23,tocIndex:13}]},23214:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Conditional rendering component supporting if/else patterns with automatic warning for invalid usage.",paraId:0,tocIndex:0},{value:"Single child",paraId:1,tocIndex:1},{value:": Render when true, nothing when false",paraId:1,tocIndex:1},{value:"Two children",paraId:1,tocIndex:1},{value:": If/else pattern",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for invalid children count",paraId:1,tocIndex:1},{value:"Zero runtime overhead",paraId:1,tocIndex:1},{value:": Optimized for production",paraId:1,tocIndex:1},{value:`import { RenderIf } from '@jswork/react-render-controls';
+`,paraId:19,tocIndex:8},{value:"You have simple true/false conditions",paraId:20,tocIndex:10},{value:"You need if/else patterns",paraId:20,tocIndex:10},{value:"You want clean, readable conditional rendering",paraId:20,tocIndex:10},{value:"You need to render arrays of data",paraId:21,tocIndex:11},{value:"You want automatic empty state handling",paraId:21,tocIndex:11},{value:"You need to map over items consistently",paraId:21,tocIndex:11},{value:"You have multiple conditions based on a single value",paraId:22,tocIndex:12},{value:"You want cleaner code than nested ternaries",paraId:22,tocIndex:12},{value:"You need to match specific values or patterns",paraId:22,tocIndex:12},{value:"You have complex conditional logic",paraId:23,tocIndex:13},{value:"You need predicate-based matching",paraId:23,tocIndex:13},{value:"You want the most flexibility for conditions",paraId:23,tocIndex:13}]},23214:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Conditional rendering component supporting if/else patterns with automatic warning for invalid usage.",paraId:0,tocIndex:0},{value:"Single child",paraId:1,tocIndex:1},{value:": Render when true, nothing when false",paraId:1,tocIndex:1},{value:"Two children",paraId:1,tocIndex:1},{value:": If/else pattern",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for invalid children count",paraId:1,tocIndex:1},{value:"Zero runtime overhead",paraId:1,tocIndex:1},{value:": Optimized for production",paraId:1,tocIndex:1},{value:`import { RenderIf } from '@jswork/react-render-controls';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -248,7 +249,7 @@ return <Banner />;
     </RenderIf>
   )}
 />
-`,paraId:17,tocIndex:18},{value:"In development mode, ",paraId:18,tocIndex:19},{value:"RenderIf",paraId:18,tocIndex:19},{value:" will warn you if:",paraId:18,tocIndex:19},{value:"You provide more than 2 children",paraId:19,tocIndex:19},{value:"The children structure is invalid",paraId:19,tocIndex:19},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:20,tocIndex:19}]},53331:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Declarative list rendering with support for both function and component-based rendering patterns.",paraId:0,tocIndex:0},{value:"Function-style rendering",paraId:1,tocIndex:1},{value:": ",paraId:1,tocIndex:1},{value:"(item, index, items) => ReactNode",paraId:1,tocIndex:1},{value:"Component-style rendering",paraId:1,tocIndex:1},{value:": Automatic prop mapping",paraId:1,tocIndex:1},{value:"Custom key generation",paraId:1,tocIndex:1},{value:": Multiple strategies for unique keys",paraId:1,tocIndex:1},{value:"Full context access",paraId:1,tocIndex:1},{value:": Index and full items array available",paraId:1,tocIndex:1},{value:`import { RenderList } from '@jswork/react-render-controls';
+`,paraId:17,tocIndex:18},{value:"In development mode, ",paraId:18,tocIndex:19},{value:"RenderIf",paraId:18,tocIndex:19},{value:" will warn you if:",paraId:18,tocIndex:19},{value:"You provide more than 2 children",paraId:19,tocIndex:19},{value:"The children structure is invalid",paraId:19,tocIndex:19},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:20,tocIndex:19}]},53331:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Declarative list rendering with support for both function and component-based rendering patterns.",paraId:0,tocIndex:0},{value:"Function-style rendering",paraId:1,tocIndex:1},{value:": ",paraId:1,tocIndex:1},{value:"(item, index, items) => ReactNode",paraId:1,tocIndex:1},{value:"Component-style rendering",paraId:1,tocIndex:1},{value:": Automatic prop mapping",paraId:1,tocIndex:1},{value:"Custom key generation",paraId:1,tocIndex:1},{value:": Multiple strategies for unique keys",paraId:1,tocIndex:1},{value:"Full context access",paraId:1,tocIndex:1},{value:": Index and full items array available",paraId:1,tocIndex:1},{value:`import { RenderList } from '@jswork/react-render-controls';
 
 function UserList({ users }) {
   return (
@@ -353,7 +354,7 @@ const users: User[] = [
     return <ProgressBar value={percentage} />;
   }}
 />
-`,paraId:12,tocIndex:15},{value:"The ",paraId:13,tocIndex:16},{value:"keyBy",paraId:13,tocIndex:16},{value:" prop is recommended for proper React reconciliation",paraId:13,tocIndex:16},{value:"When using component-style rendering, ",paraId:13,tocIndex:16},{value:"dataKey",paraId:13,tocIndex:16},{value:" specifies which prop receives the item data",paraId:13,tocIndex:16},{value:"The function render style provides more flexibility for complex scenarios",paraId:13,tocIndex:16}]},60308:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Pattern matching component that renders the child matching the given value.",paraId:0,tocIndex:0},{value:"Single value matching",paraId:1,tocIndex:1},{value:": Match one value to one child",paraId:1,tocIndex:1},{value:"Multiple value matching",paraId:1,tocIndex:1},{value:": Match multiple values to the same child (array syntax)",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for unmatched values",paraId:1,tocIndex:1},{value:"Status-based rendering",paraId:1,tocIndex:1},{value:": Perfect for state machines and status flows",paraId:1,tocIndex:1},{value:`import { RenderMatch } from '@jswork/react-render-controls';
+`,paraId:12,tocIndex:15},{value:"The ",paraId:13,tocIndex:16},{value:"keyBy",paraId:13,tocIndex:16},{value:" prop is recommended for proper React reconciliation",paraId:13,tocIndex:16},{value:"When using component-style rendering, ",paraId:13,tocIndex:16},{value:"dataKey",paraId:13,tocIndex:16},{value:" specifies which prop receives the item data",paraId:13,tocIndex:16},{value:"The function render style provides more flexibility for complex scenarios",paraId:13,tocIndex:16}]},60308:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Pattern matching component that renders the child matching the given value.",paraId:0,tocIndex:0},{value:"Single value matching",paraId:1,tocIndex:1},{value:": Match one value to one child",paraId:1,tocIndex:1},{value:"Multiple value matching",paraId:1,tocIndex:1},{value:": Match multiple values to the same child (array syntax)",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for unmatched values",paraId:1,tocIndex:1},{value:"Status-based rendering",paraId:1,tocIndex:1},{value:": Perfect for state machines and status flows",paraId:1,tocIndex:1},{value:`import { RenderMatch } from '@jswork/react-render-controls';
 
 function StatusDisplay({ status }) {
   return (
@@ -481,7 +482,7 @@ function StatusDisplay({ status }) {
   <MediumPriority />
   <HighPriority />
 </RenderMatch>
-`,paraId:20,tocIndex:19},{value:"In development mode, ",paraId:21,tocIndex:20},{value:"RenderMatch",paraId:21,tocIndex:20},{value:" will warn you if:",paraId:21,tocIndex:20},{value:"The value doesn't match any item in the list",paraId:22,tocIndex:20},{value:"The number of items doesn't match the number of children",paraId:22,tocIndex:20},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:23,tocIndex:20}]},54879:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Switch-style conditional rendering with multiple conditions and fallback support.",paraId:0,tocIndex:0},{value:"Multiple case conditions",paraId:1,tocIndex:1},{value:": Test multiple boolean conditions in order",paraId:1,tocIndex:1},{value:"First matching case wins",paraId:1,tocIndex:1},{value:": Stops at the first true condition",paraId:1,tocIndex:1},{value:"Optional fallback",paraId:1,tocIndex:1},{value:": Render content when no cases match",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for cases/children mismatch",paraId:1,tocIndex:1},{value:`import { RenderSwitch } from '@jswork/react-render-controls';
+`,paraId:20,tocIndex:19},{value:"In development mode, ",paraId:21,tocIndex:20},{value:"RenderMatch",paraId:21,tocIndex:20},{value:" will warn you if:",paraId:21,tocIndex:20},{value:"The value doesn't match any item in the list",paraId:22,tocIndex:20},{value:"The number of items doesn't match the number of children",paraId:22,tocIndex:20},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:23,tocIndex:20}]},54879:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Switch-style conditional rendering with multiple conditions, fallback support, and optional multi-match mode.",paraId:0,tocIndex:0},{value:"Multiple case conditions",paraId:1,tocIndex:1},{value:": Test multiple boolean conditions in order",paraId:1,tocIndex:1},{value:"First matching case wins",paraId:1,tocIndex:1},{value:" (default): Stops at the first true condition",paraId:1,tocIndex:1},{value:"Multiple matches mode",paraId:1,tocIndex:1},{value:": When ",paraId:1,tocIndex:1},{value:"multiple=true",paraId:1,tocIndex:1},{value:", renders all matching children",paraId:1,tocIndex:1},{value:"Optional fallback",paraId:1,tocIndex:1},{value:": Render content when no cases match",paraId:1,tocIndex:1},{value:"Development warnings",paraId:1,tocIndex:1},{value:": Alerts for cases/children mismatch",paraId:1,tocIndex:1},{value:`import { RenderSwitch } from '@jswork/react-render-controls';
 
 function Dashboard({ user }) {
   return (
@@ -492,19 +493,29 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:2,tocIndex:3},{value:`<RenderSwitch
+`,paraId:2,tocIndex:3},{value:"Only renders the first matching child.",paraId:3,tocIndex:3},{value:`<RenderSwitch
   cases={[user.isAdmin, user.isModerator]}
   fallback={<AccessDenied />}
 >
   <AdminPanel />
   <ModeratorPanel />
 </RenderSwitch>
-`,paraId:3,tocIndex:4},{value:"When no cases match, the ",paraId:4,tocIndex:4},{value:"fallback",paraId:4,tocIndex:4},{value:" is rendered.",paraId:4,tocIndex:4},{value:"Prop",paraId:5,tocIndex:6},{value:"Type",paraId:5,tocIndex:6},{value:"Required",paraId:5,tocIndex:6},{value:"Default",paraId:5,tocIndex:6},{value:"Description",paraId:5,tocIndex:6},{value:"cases",paraId:5,tocIndex:6},{value:"readonly boolean[]",paraId:5,tocIndex:6},{value:"Yes",paraId:5,tocIndex:6},{value:"-",paraId:5,tocIndex:6},{value:"Array of boolean conditions",paraId:5,tocIndex:6},{value:"children",paraId:5,tocIndex:6},{value:"ReactNode",paraId:5,tocIndex:6},{value:"Yes",paraId:5,tocIndex:6},{value:"-",paraId:5,tocIndex:6},{value:"Children corresponding to cases",paraId:5,tocIndex:6},{value:"fallback",paraId:5,tocIndex:6},{value:"ReactNode",paraId:5,tocIndex:6},{value:"No",paraId:5,tocIndex:6},{value:"-",paraId:5,tocIndex:6},{value:"Fallback content when no cases match",paraId:5,tocIndex:6},{value:`interface RenderSwitchProps {
+`,paraId:4,tocIndex:4},{value:"When no cases match, the ",paraId:5,tocIndex:4},{value:"fallback",paraId:5,tocIndex:4},{value:" is rendered.",paraId:5,tocIndex:4},{value:"Prop",paraId:6,tocIndex:6},{value:"Type",paraId:6,tocIndex:6},{value:"Required",paraId:6,tocIndex:6},{value:"Default",paraId:6,tocIndex:6},{value:"Description",paraId:6,tocIndex:6},{value:"cases",paraId:6,tocIndex:6},{value:"readonly boolean[]",paraId:6,tocIndex:6},{value:"Yes",paraId:6,tocIndex:6},{value:"-",paraId:6,tocIndex:6},{value:"Array of boolean conditions",paraId:6,tocIndex:6},{value:"children",paraId:6,tocIndex:6},{value:"ReactNode",paraId:6,tocIndex:6},{value:"Yes",paraId:6,tocIndex:6},{value:"-",paraId:6,tocIndex:6},{value:"Children corresponding to cases",paraId:6,tocIndex:6},{value:"fallback",paraId:6,tocIndex:6},{value:"ReactNode",paraId:6,tocIndex:6},{value:"No",paraId:6,tocIndex:6},{value:"-",paraId:6,tocIndex:6},{value:"Fallback content when no cases match",paraId:6,tocIndex:6},{value:"multiple",paraId:6,tocIndex:6},{value:"boolean",paraId:6,tocIndex:6},{value:"No",paraId:6,tocIndex:6},{value:"false",paraId:6,tocIndex:6},{value:"When ",paraId:6,tocIndex:6},{value:"true",paraId:6,tocIndex:6},{value:", render all matches; when ",paraId:6,tocIndex:6},{value:"false",paraId:6,tocIndex:6},{value:", only first match",paraId:6,tocIndex:6},{value:`interface RenderSwitchProps {
   cases: readonly boolean[];
   children: ReactNode;
   fallback?: ReactNode;
+  multiple?: boolean;
 }
-`,paraId:6,tocIndex:7},{value:`function DataLoader({ isLoading, isError, data }) {
+`,paraId:7,tocIndex:7},{value:"When ",paraId:8,tocIndex:9},{value:"multiple",paraId:8,tocIndex:9},{value:" is ",paraId:8,tocIndex:9},{value:"true",paraId:8,tocIndex:9},{value:", all matching children are rendered:",paraId:8,tocIndex:9},{value:`const hasRead = user.permissions.includes('read');
+const hasWrite = user.permissions.includes('write');
+const hasDelete = user.permissions.includes('delete');
+
+<RenderSwitch cases={[hasRead, hasWrite, hasDelete]} multiple>
+  <ReadPermission />
+  <WritePermission />
+  <DeletePermission />
+</RenderSwitch>
+`,paraId:9,tocIndex:9},{value:"If ",paraId:10,tocIndex:9},{value:"hasRead=true",paraId:10,tocIndex:9},{value:", ",paraId:10,tocIndex:9},{value:"hasWrite=true",paraId:10,tocIndex:9},{value:", ",paraId:10,tocIndex:9},{value:"hasDelete=false",paraId:10,tocIndex:9},{value:":",paraId:10,tocIndex:9},{value:"Renders both ",paraId:11,tocIndex:9},{value:"<ReadPermission />",paraId:11,tocIndex:9},{value:" and ",paraId:11,tocIndex:9},{value:"<WritePermission />",paraId:11,tocIndex:9},{value:`function DataLoader({ isLoading, isError, data }) {
   return (
     <RenderSwitch
       cases={[isError, isLoading, !!data]}
@@ -516,7 +527,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:7,tocIndex:9},{value:`function AuthGate({ user, isLoading }) {
+`,paraId:12,tocIndex:10},{value:`function AuthGate({ user, isLoading }) {
   return (
     <RenderSwitch
       cases={[isLoading, !!user]}
@@ -527,7 +538,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:8,tocIndex:10},{value:`function ResourceActions({ resource, user }) {
+`,paraId:13,tocIndex:11},{value:`function ResourceActions({ resource, user }) {
   const canEdit = user.id === resource.authorId;
   const canDelete = user.isAdmin || user.id === resource.authorId;
 
@@ -542,7 +553,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:9,tocIndex:11},{value:`function ResponsiveLayout({ breakpoint }) {
+`,paraId:14,tocIndex:12},{value:`function ResponsiveLayout({ breakpoint }) {
   return (
     <RenderSwitch
       cases={[breakpoint === 'mobile', breakpoint === 'tablet']}
@@ -553,7 +564,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:10,tocIndex:12},{value:`function FormFeedback({ form }) {
+`,paraId:15,tocIndex:13},{value:`function FormFeedback({ form }) {
   return (
     <RenderSwitch
       cases={[
@@ -569,7 +580,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:11,tocIndex:13},{value:`function DocumentViewer({ doc }) {
+`,paraId:16,tocIndex:14},{value:`function DocumentViewer({ doc }) {
   return (
     <RenderSwitch
       cases={[
@@ -586,7 +597,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:12,tocIndex:14},{value:`function NewFeature({ flags }) {
+`,paraId:17,tocIndex:15},{value:`function NewFeature({ flags }) {
   return (
     <RenderSwitch
       cases={[flags.forceEnable, flags.betaUser, flags.isStaff]}
@@ -598,7 +609,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:13,tocIndex:15},{value:`function Greeting({ hour }) {
+`,paraId:18,tocIndex:16},{value:`function Greeting({ hour }) {
   return (
     <RenderSwitch
       cases={[
@@ -614,7 +625,7 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:14,tocIndex:16},{value:`function ConnectionStatus({ status }) {
+`,paraId:19,tocIndex:17},{value:`function ConnectionStatus({ status }) {
   return (
     <RenderSwitch
       cases={[status === 'offline', status === 'connecting']}
@@ -625,20 +636,20 @@ function Dashboard({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:15,tocIndex:17},{value:"RenderSwitch",paraId:16,tocIndex:19},{value:" is ideal when you have multiple mutually exclusive conditions:",paraId:16,tocIndex:19},{value:`// Good
+`,paraId:20,tocIndex:18},{value:"RenderSwitch",paraId:21,tocIndex:20},{value:" is ideal when you have multiple mutually exclusive conditions:",paraId:21,tocIndex:20},{value:`// Good
 <RenderSwitch cases={[isAdmin, isModerator, isUser]}>
   <AdminPanel />
   <ModeratorPanel />
   <UserPanel />
 </RenderSwitch>
-`,paraId:17,tocIndex:19},{value:"Always provide a fallback for better UX:",paraId:18,tocIndex:20},{value:`<RenderSwitch
+`,paraId:22,tocIndex:20},{value:"Always provide a fallback for better UX:",paraId:23,tocIndex:21},{value:`<RenderSwitch
   cases={[status === 'active', status === 'pending']}
   fallback={<UnknownState />}
 >
   <ActiveState />
   <PendingState />
 </RenderSwitch>
-`,paraId:19,tocIndex:20},{value:"Place most specific conditions first:",paraId:20,tocIndex:21},{value:`<RenderSwitch
+`,paraId:24,tocIndex:21},{value:"Place most specific conditions first:",paraId:25,tocIndex:22},{value:`<RenderSwitch
   cases={[
     user.isAdmin && user.isSuperAdmin,  // Most specific
     user.isAdmin,
@@ -649,7 +660,7 @@ function Dashboard({ user }) {
   <AdminPanel />
   <ModeratorPanel />
 </RenderSwitch>
-`,paraId:21,tocIndex:21},{value:"true",paraId:22},{value:"Use ",paraId:23,tocIndex:22},{value:"true",paraId:23,tocIndex:22},{value:" as the last condition for a catch-all:",paraId:23,tocIndex:22},{value:`<RenderSwitch
+`,paraId:26,tocIndex:22},{value:"true",paraId:27},{value:"Use ",paraId:28,tocIndex:23},{value:"true",paraId:28,tocIndex:23},{value:" as the last condition for a catch-all:",paraId:28,tocIndex:23},{value:`<RenderSwitch
   cases={[
     condition1,
     condition2,
@@ -660,7 +671,7 @@ function Dashboard({ user }) {
   <Result2 />
   <DefaultResult />
 </RenderSwitch>
-`,paraId:24,tocIndex:22},{value:"Feature",paraId:25,tocIndex:23},{value:"RenderIf",paraId:25,tocIndex:23},{value:"RenderSwitch",paraId:25,tocIndex:23},{value:"Conditions",paraId:25,tocIndex:23},{value:"Single boolean",paraId:25,tocIndex:23},{value:"Multiple boolean cases",paraId:25,tocIndex:23},{value:"Children",paraId:25,tocIndex:23},{value:"1-2 children",paraId:25,tocIndex:23},{value:"Multiple children + fallback",paraId:25,tocIndex:23},{value:"Use case",paraId:25,tocIndex:23},{value:"Simple if/else",paraId:25,tocIndex:23},{value:"Multiple mutually exclusive states",paraId:25,tocIndex:23},{value:"Fallback",paraId:25,tocIndex:23},{value:"Implicit (second child)",paraId:25,tocIndex:23},{value:"Explicit fallback prop",paraId:25,tocIndex:23},{value:"In development mode, ",paraId:26,tocIndex:24},{value:"RenderSwitch",paraId:26,tocIndex:24},{value:" will warn you if:",paraId:26,tocIndex:24},{value:"The number of cases doesn't match the number of children",paraId:27,tocIndex:24},{value:"Cases array is empty",paraId:27,tocIndex:24},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:28,tocIndex:24}]},34914:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Welcome to the React Render Controls guide. Explore the documentation below:",paraId:0,tocIndex:0},{value:"Getting Started",paraId:1,tocIndex:0},{value:" - Installation and basic usage",paraId:2,tocIndex:0},{value:"Components",paraId:3,tocIndex:0},{value:" - Detailed component documentation",paraId:2,tocIndex:0},{value:"API Reference",paraId:4,tocIndex:0},{value:" - Complete type definitions",paraId:2,tocIndex:0}]},63961:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"React Render Controls is a lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.",paraId:0,tocIndex:0},{value:"Install the package using your favorite package manager:",paraId:1,tocIndex:1},{value:`# npm
+`,paraId:29,tocIndex:23},{value:"Feature",paraId:30,tocIndex:24},{value:"RenderIf",paraId:30,tocIndex:24},{value:"RenderSwitch",paraId:30,tocIndex:24},{value:"Conditions",paraId:30,tocIndex:24},{value:"Single boolean",paraId:30,tocIndex:24},{value:"Multiple boolean cases",paraId:30,tocIndex:24},{value:"Children",paraId:30,tocIndex:24},{value:"1-2 children",paraId:30,tocIndex:24},{value:"Multiple children + fallback",paraId:30,tocIndex:24},{value:"Use case",paraId:30,tocIndex:24},{value:"Simple if/else",paraId:30,tocIndex:24},{value:"Multiple mutually exclusive states",paraId:30,tocIndex:24},{value:"Fallback",paraId:30,tocIndex:24},{value:"Implicit (second child)",paraId:30,tocIndex:24},{value:"Explicit fallback prop",paraId:30,tocIndex:24},{value:"In development mode, ",paraId:31,tocIndex:25},{value:"RenderSwitch",paraId:31,tocIndex:25},{value:" will warn you if:",paraId:31,tocIndex:25},{value:"The number of cases doesn't match the number of children",paraId:32,tocIndex:25},{value:"Cases array is empty",paraId:32,tocIndex:25},{value:"These warnings help catch bugs early while maintaining zero runtime overhead in production.",paraId:33,tocIndex:25}]},34914:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Welcome to the React Render Controls guide. Explore the documentation below:",paraId:0,tocIndex:0},{value:"Getting Started",paraId:1,tocIndex:0},{value:" - Installation and basic usage",paraId:2,tocIndex:0},{value:"Components",paraId:3,tocIndex:0},{value:" - Detailed component documentation",paraId:2,tocIndex:0},{value:"API Reference",paraId:4,tocIndex:0},{value:" - Complete type definitions",paraId:2,tocIndex:0}]},63961:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"React Render Controls is a lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.",paraId:0,tocIndex:0},{value:"Install the package using your favorite package manager:",paraId:1,tocIndex:1},{value:`# npm
 npm install @jswork/react-render-controls
 
 # yarn
@@ -718,7 +729,8 @@ function UserRolePanel({ user }) {
     </RenderSwitch>
   );
 }
-`,paraId:7,tocIndex:7},{value:"All components are fully typed. Import types as needed:",paraId:8,tocIndex:8},{value:`import type {
+`,paraId:7,tocIndex:7},{value:"If you need the default styles, you can import them:",paraId:8,tocIndex:8},{value:`import '@jswork/react-render-controls/dist/style.css';
+`,paraId:9,tocIndex:8},{value:"Note: This is optional. The components are headless and have no built-in styling by default.",paraId:10,tocIndex:8},{value:"All components are fully typed. Import types as needed:",paraId:11,tocIndex:9},{value:`import type {
   RenderListProps,
   RenderFn,
   RenderComponentConfig,
@@ -726,7 +738,7 @@ function UserRolePanel({ user }) {
   RenderMatchProps,
   RenderSwitchProps
 } from '@jswork/react-render-controls';
-`,paraId:9,tocIndex:8},{value:"Explore ",paraId:10,tocIndex:9},{value:"Component Documentation",paraId:11,tocIndex:9},{value:" for detailed usage",paraId:10,tocIndex:9},{value:"Check out ",paraId:10,tocIndex:9},{value:"API Reference",paraId:12,tocIndex:9},{value:" for complete type definitions",paraId:10,tocIndex:9}]},25921:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:`npm install @jswork/react-render-controls
+`,paraId:12,tocIndex:9},{value:"Explore ",paraId:13,tocIndex:10},{value:"Component Documentation",paraId:14,tocIndex:10},{value:" for detailed usage",paraId:13,tocIndex:10},{value:"Check out ",paraId:13,tocIndex:10},{value:"API Reference",paraId:15,tocIndex:10},{value:" for complete type definitions",paraId:13,tocIndex:10}]},25921:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:`npm install @jswork/react-render-controls
 `,paraId:0,tocIndex:0},{value:`import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
 
 // Conditional rendering
@@ -749,7 +761,7 @@ function UserRolePanel({ user }) {
   <AdminPanel />
   <PremiumPanel />
 </RenderSwitch>
-`,paraId:1,tocIndex:1}]},1221:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Interactive demos for React Render Controls components. Click on any component below to explore live, editable examples.",paraId:0,tocIndex:0},{value:"RenderList Demos",paraId:1,tocIndex:1},{value:" - List rendering with function and component patterns",paraId:2,tocIndex:1},{value:"RenderIf Demos",paraId:3,tocIndex:1},{value:" - Conditional rendering with if/else patterns",paraId:2,tocIndex:1},{value:"RenderMatch Demos",paraId:4,tocIndex:1},{value:" - Pattern matching for status-based rendering",paraId:2,tocIndex:1},{value:"RenderSwitch Demos",paraId:5,tocIndex:1},{value:" - Switch-style conditional rendering",paraId:2,tocIndex:1},{value:"Live Editing",paraId:6,tocIndex:2},{value:" - All demos are editable in real-time",paraId:6,tocIndex:2},{value:"Interactive",paraId:6,tocIndex:2},{value:" - See changes immediately as you code",paraId:6,tocIndex:2},{value:"Type-Safe",paraId:6,tocIndex:2},{value:" - Full TypeScript support",paraId:6,tocIndex:2},{value:"Production Ready",paraId:6,tocIndex:2},{value:" - All examples follow best practices",paraId:6,tocIndex:2},{value:"Select a component above to view interactive demos. Each demo includes:",paraId:7,tocIndex:3},{value:"Complete, runnable code",paraId:8,tocIndex:3},{value:"Real-time preview",paraId:8,tocIndex:3},{value:"Editable source code",paraId:8,tocIndex:3},{value:"Usage examples and patterns",paraId:8,tocIndex:3}]},23772:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderIf component.",paraId:0,tocIndex:0}]},15719:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderList component.",paraId:0,tocIndex:0},{value:"Mui Slots Style",paraId:1}]},44269:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderMatch component.",paraId:0,tocIndex:0}]},47626:function(i,t,e){"use strict";e.r(t),e.d(t,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderSwitch component.",paraId:0,tocIndex:0}]},14224:function(i){var t=i.exports={},e,r;function h(){throw new Error("setTimeout has not been defined")}function s(){throw new Error("clearTimeout has not been defined")}(function(){try{typeof setTimeout=="function"?e=setTimeout:e=h}catch(c){e=h}try{typeof clearTimeout=="function"?r=clearTimeout:r=s}catch(c){r=s}})();function b(c){if(e===setTimeout)return setTimeout(c,0);if((e===h||!e)&&setTimeout)return e=setTimeout,setTimeout(c,0);try{return e(c,0)}catch(n){try{return e.call(null,c,0)}catch(S){return e.call(this,c,0)}}}function g(c){if(r===clearTimeout)return clearTimeout(c);if((r===s||!r)&&clearTimeout)return r=clearTimeout,clearTimeout(c);try{return r(c)}catch(n){try{return r.call(null,c)}catch(S){return r.call(this,c)}}}var d=[],f=!1,y,l=-1;function p(){!f||!y||(f=!1,y.length?d=y.concat(d):l=-1,d.length&&u())}function u(){if(!f){var c=b(p);f=!0;for(var n=d.length;n;){for(y=d,d=[];++l<n;)y&&y[l].run();l=-1,n=d.length}y=null,f=!1,g(c)}}t.nextTick=function(c){var n=new Array(arguments.length-1);if(arguments.length>1)for(var S=1;S<arguments.length;S++)n[S-1]=arguments[S];d.push(new a(c,n)),d.length===1&&!f&&b(u)};function a(c,n){this.fun=c,this.array=n}a.prototype.run=function(){this.fun.apply(null,this.array)},t.title="browser",t.browser=!0,t.env={},t.argv=[],t.version="",t.versions={};function o(){}t.on=o,t.addListener=o,t.once=o,t.off=o,t.removeListener=o,t.removeAllListeners=o,t.emit=o,t.prependListener=o,t.prependOnceListener=o,t.listeners=function(c){return[]},t.binding=function(c){throw new Error("process.binding is not supported")},t.cwd=function(){return"/"},t.chdir=function(c){throw new Error("process.chdir is not supported")},t.umask=function(){return 0}},45374:function(i,t){"use strict";t.Z=`import { RenderIf } from '@jswork/react-render-controls';
+`,paraId:1,tocIndex:1}]},1221:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Interactive demos for React Render Controls components. Click on any component below to explore live, editable examples.",paraId:0,tocIndex:0},{value:"RenderList Demos",paraId:1,tocIndex:1},{value:" - List rendering with function and component patterns",paraId:2,tocIndex:1},{value:"RenderIf Demos",paraId:3,tocIndex:1},{value:" - Conditional rendering with if/else patterns",paraId:2,tocIndex:1},{value:"RenderMatch Demos",paraId:4,tocIndex:1},{value:" - Pattern matching for status-based rendering",paraId:2,tocIndex:1},{value:"RenderSwitch Demos",paraId:5,tocIndex:1},{value:" - Switch-style conditional rendering",paraId:2,tocIndex:1},{value:"Live Editing",paraId:6,tocIndex:2},{value:" - All demos are editable in real-time",paraId:6,tocIndex:2},{value:"Interactive",paraId:6,tocIndex:2},{value:" - See changes immediately as you code",paraId:6,tocIndex:2},{value:"Type-Safe",paraId:6,tocIndex:2},{value:" - Full TypeScript support",paraId:6,tocIndex:2},{value:"Production Ready",paraId:6,tocIndex:2},{value:" - All examples follow best practices",paraId:6,tocIndex:2},{value:"Select a component above to view interactive demos. Each demo includes:",paraId:7,tocIndex:3},{value:"Complete, runnable code",paraId:8,tocIndex:3},{value:"Real-time preview",paraId:8,tocIndex:3},{value:"Editable source code",paraId:8,tocIndex:3},{value:"Usage examples and patterns",paraId:8,tocIndex:3}]},23772:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderIf component.",paraId:0,tocIndex:0}]},15719:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderList component.",paraId:0,tocIndex:0},{value:"Mui Slots Style",paraId:1}]},44269:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderMatch component.",paraId:0,tocIndex:0}]},47626:function(c,n,e){"use strict";e.r(n),e.d(n,{texts:function(){return r}});const r=[{value:"Interactive demos for the RenderSwitch component.",paraId:0,tocIndex:0}]},14224:function(c){var n=c.exports={},e,r;function x(){throw new Error("setTimeout has not been defined")}function l(){throw new Error("clearTimeout has not been defined")}(function(){try{typeof setTimeout=="function"?e=setTimeout:e=x}catch(s){e=x}try{typeof clearTimeout=="function"?r=clearTimeout:r=l}catch(s){r=l}})();function S(s){if(e===setTimeout)return setTimeout(s,0);if((e===x||!e)&&setTimeout)return e=setTimeout,setTimeout(s,0);try{return e(s,0)}catch(t){try{return e.call(null,s,0)}catch(i){return e.call(this,s,0)}}}function g(s){if(r===clearTimeout)return clearTimeout(s);if((r===l||!r)&&clearTimeout)return r=clearTimeout,clearTimeout(s);try{return r(s)}catch(t){try{return r.call(null,s)}catch(i){return r.call(this,s)}}}var a=[],h=!1,y,f=-1;function p(){!h||!y||(h=!1,y.length?a=y.concat(a):f=-1,a.length&&u())}function u(){if(!h){var s=S(p);h=!0;for(var t=a.length;t;){for(y=a,a=[];++f<t;)y&&y[f].run();f=-1,t=a.length}y=null,h=!1,g(s)}}n.nextTick=function(s){var t=new Array(arguments.length-1);if(arguments.length>1)for(var i=1;i<arguments.length;i++)t[i-1]=arguments[i];a.push(new d(s,t)),a.length===1&&!h&&S(u)};function d(s,t){this.fun=s,this.array=t}d.prototype.run=function(){this.fun.apply(null,this.array)},n.title="browser",n.browser=!0,n.env={},n.argv=[],n.version="",n.versions={};function o(){}n.on=o,n.addListener=o,n.once=o,n.off=o,n.removeListener=o,n.removeAllListeners=o,n.emit=o,n.prependListener=o,n.prependOnceListener=o,n.listeners=function(s){return[]},n.binding=function(s){throw new Error("process.binding is not supported")},n.cwd=function(){return"/"},n.chdir=function(s){throw new Error("process.chdir is not supported")},n.umask=function(){return 0}},45374:function(c,n){"use strict";n.Z=`import { RenderIf } from '@jswork/react-render-controls';
 import React, { useState } from 'react';
 
 export default () => {
@@ -788,7 +800,7 @@ export default () => {
     </div>
   );
 };
-`},18036:function(i,t){"use strict";t.Z=`import { RenderIf } from '@jswork/react-render-controls';
+`},18036:function(c,n){"use strict";n.Z=`import { RenderIf } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -833,7 +845,7 @@ export default () => {
     </div>
   );
 };
-`},37111:function(i,t){"use strict";t.Z=`import { RenderIf } from '@jswork/react-render-controls';
+`},37111:function(c,n){"use strict";n.Z=`import { RenderIf } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -878,7 +890,7 @@ export default () => {
     </div>
   );
 };
-`},11684:function(i,t){"use strict";t.Z=`import { RenderIf } from '@jswork/react-render-controls';
+`},11684:function(c,n){"use strict";n.Z=`import { RenderIf } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -930,7 +942,7 @@ export default () => {
     </div>
   );
 };
-`},18923:function(i,t){"use strict";t.Z=`import { RenderIf } from '@jswork/react-render-controls';
+`},18923:function(c,n){"use strict";n.Z=`import { RenderIf } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -980,7 +992,7 @@ export default () => {
     </div>
   );
 };
-`},13297:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},13297:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 
 export default () => {
   const scores = [85, 92, 78, 95, 88];
@@ -1017,7 +1029,7 @@ export default () => {
     </div>
   );
 };
-`},66925:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},66925:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 
 export default () => {
   const fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
@@ -1041,7 +1053,7 @@ export default () => {
     </div>
   );
 };
-`},89160:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},89160:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 
 // Define a reusable card component
 const UserCard = ({ user, variant = 'default' }) => {
@@ -1103,7 +1115,7 @@ export default () => {
     </div>
   );
 };
-`},56409:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},56409:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 
 export default () => {
   const items = ['First', 'Second', 'Third'];
@@ -1129,7 +1141,7 @@ export default () => {
     </div>
   );
 };
-`},21917:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},21917:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1179,7 +1191,7 @@ export default () => {
     </div>
   );
 };
-`},42404:function(i,t){"use strict";t.Z=`import { RenderList } from '@jswork/react-render-controls';
+`},42404:function(c,n){"use strict";n.Z=`import { RenderList } from '@jswork/react-render-controls';
 
 export default () => {
   const users = [
@@ -1220,7 +1232,7 @@ export default () => {
     </div>
   );
 };
-`},99753:function(i,t){"use strict";t.Z=`import { RenderMatch } from '@jswork/react-render-controls';
+`},99753:function(c,n){"use strict";n.Z=`import { RenderMatch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1257,7 +1269,7 @@ export default () => {
     </div>
   );
 };
-`},85497:function(i,t){"use strict";t.Z=`import { RenderMatch } from '@jswork/react-render-controls';
+`},85497:function(c,n){"use strict";n.Z=`import { RenderMatch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1314,7 +1326,7 @@ export default () => {
     </div>
   );
 };
-`},44856:function(i,t){"use strict";t.Z=`import { RenderMatch } from '@jswork/react-render-controls';
+`},44856:function(c,n){"use strict";n.Z=`import { RenderMatch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1357,7 +1369,7 @@ export default () => {
     </div>
   );
 };
-`},72264:function(i,t){"use strict";t.Z=`import { RenderMatch } from '@jswork/react-render-controls';
+`},72264:function(c,n){"use strict";n.Z=`import { RenderMatch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1406,7 +1418,7 @@ export default () => {
     </div>
   );
 };
-`},84771:function(i,t){"use strict";t.Z=`import { RenderMatch } from '@jswork/react-render-controls';
+`},84771:function(c,n){"use strict";n.Z=`import { RenderMatch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1465,7 +1477,7 @@ export default () => {
     </div>
   );
 };
-`},16016:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},16016:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1510,7 +1522,7 @@ export default () => {
     </div>
   );
 };
-`},34875:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},34875:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1579,7 +1591,7 @@ export default () => {
     </div>
   );
 };
-`},45878:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},45878:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1646,7 +1658,7 @@ export default () => {
     </div>
   );
 };
-`},92245:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},92245:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1718,7 +1730,204 @@ export default () => {
     </div>
   );
 };
-`},36578:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},4787:function(c,n){"use strict";n.Z=`.render-switch-multiple-demo {
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+
+  .description {
+    color: #666;
+    margin-bottom: 20px;
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  }
+
+  .demo-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+
+    h4 {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+    }
+
+    .permission-toggles {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 10px;
+        background: white;
+        border-radius: 6px;
+        transition: background 0.2s;
+
+        &:hover {
+          background: #f0f0f0;
+        }
+
+        input[type='checkbox'] {
+          width: 18px;
+          height: 18px;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 14px;
+          user-select: none;
+        }
+      }
+    }
+
+    .permissions {
+      display: flex;
+      gap: 15px;
+
+      .permission {
+        padding: 8px 12px;
+        background: white;
+        border-radius: 6px;
+        font-size: 14px;
+
+        &.active {
+          background: #e8f5e9;
+          color: #2e7d32;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .permission-badge {
+      padding: 12px 16px;
+      margin: 8px 0;
+      border-radius: 6px;
+      font-size: 14px;
+
+      &.read {
+        background: #e3f2fd;
+        color: #1565c0;
+      }
+
+      &.write {
+        background: #fff3e0;
+        color: #e65100;
+      }
+
+      &.delete {
+        background: #ffebee;
+        color: #c62828;
+      }
+    }
+  }
+
+  .explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff9e6;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+
+    p {
+      margin: 8px 0;
+      font-size: 14px;
+
+      strong {
+        color: #333;
+      }
+
+      code {
+        background: #f0f0f0;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+`},88919:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+import { useState } from 'react';
+import './render-switch-multiple.scss';
+
+export default () => {
+  const [hasRead, setHasRead] = useState(true);
+  const [hasWrite, setHasWrite] = useState(true);
+  const [hasDelete, setHasDelete] = useState(false);
+
+  return (
+    <div className="render-switch-multiple-demo">
+      <h3>Multiple Mode Demo</h3>
+      <p className="description">
+        When <code>multiple</code> is <code>true</code>, all matching children are rendered.
+      </p>
+
+      <div className="demo-section">
+        <h4>Toggle Permissions:</h4>
+        <div className="permission-toggles">
+          <label className="toggle">
+            <input type="checkbox" checked={hasRead} onChange={() => setHasRead(!hasRead)} />
+            <span>Read Permission</span>
+          </label>
+          <label className="toggle">
+            <input type="checkbox" checked={hasWrite} onChange={() => setHasWrite(!hasWrite)} />
+            <span>Write Permission</span>
+          </label>
+          <label className="toggle">
+            <input type="checkbox" checked={hasDelete} onChange={() => setHasDelete(!hasDelete)} />
+            <span>Delete Permission</span>
+          </label>
+        </div>
+      </div>
+
+      <div className="demo-section">
+        <h4>Current Permissions:</h4>
+        <div className="permissions">
+          <span className={\`permission \${hasRead ? 'active' : ''}\`}>Read: {hasRead ? '\u2713' : '\u2717'}</span>
+          <span className={\`permission \${hasWrite ? 'active' : ''}\`}>Write: {hasWrite ? '\u2713' : '\u2717'}</span>
+          <span className={\`permission \${hasDelete ? 'active' : ''}\`}>Delete: {hasDelete ? '\u2713' : '\u2717'}</span>
+        </div>
+      </div>
+
+      <div className="demo-section">
+        <h4>Rendered Result:</h4>
+        <RenderSwitch cases={[hasRead, hasWrite, hasDelete]} multiple>
+          <div className="permission-badge read">Read Permission Granted</div>
+          <div className="permission-badge write">Write Permission Granted</div>
+          <div className="permission-badge delete">Delete Permission Granted</div>
+        </RenderSwitch>
+      </div>
+
+      <div className="explanation">
+        <p>
+          <strong>Active permissions:</strong>{' '}
+          {[hasRead && 'Read', hasWrite && 'Write', hasDelete && 'Delete']
+            .filter(Boolean)
+            .join(', ') || 'None'}
+        </p>
+        <p>
+          Try toggling the checkboxes above to see how the <code>multiple</code> mode renders all
+          matching children.
+        </p>
+      </div>
+    </div>
+  );
+};
+`},36578:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
@@ -1778,7 +1987,7 @@ export default () => {
     </div>
   );
 };
-`},55350:function(i,t){"use strict";t.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
+`},55350:function(c,n){"use strict";n.Z=`import { RenderSwitch } from '@jswork/react-render-controls';
 import { useState } from 'react';
 
 export default () => {
