@@ -1,21 +1,5 @@
 # react-render-controls-docs
 A static site base on [dumi](https://d.umijs.org).
 
-## Development
-
-```bash
-# install dependencies
-$ pnpm install
-
-# start dev server
-$ pnpm start
-
-# build docs
-$ pnpm run build
-
-# Locally preview the production build
-$ pnpm run preview
-```
-
-## LICENSE
-MIT
+## preview-url
+- https://aric-docs.github.io/react-render-controls-docs
