@@ -102,8 +102,8 @@ function UserProfile({ user }) {
   return (
     <RenderIf when={user}>
       <div>
-        <h1>{user.name}</h1>
-        <p>{user.email}</p>
+        <h1>{user?.name}</h1>
+        <p>{user?.email}</p>
       </div>
       <div>
         <p>Please log in to view profile</p>

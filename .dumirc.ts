@@ -17,7 +17,11 @@ export default defineConfig({
       },
       {
         title: 'Components',
-        link: '/components/render-list',
+        link: '/components',
+      },
+      {
+        title: 'Playground',
+        link: '/playground',
       },
       {
         title: 'API',
