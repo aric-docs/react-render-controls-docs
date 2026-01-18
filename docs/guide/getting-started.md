@@ -22,14 +22,6 @@ yarn add @jswork/react-render-controls
 pnpm add @jswork/react-render-controls
 ```
 
-## Import Styles (Optional)
-
-If you need default styles, you can import them:
-
-```tsx
-import '@jswork/react-render-controls/dist/style.css';
-```
-
 ## Basic Usage
 
 ### Conditional Rendering with RenderIf
