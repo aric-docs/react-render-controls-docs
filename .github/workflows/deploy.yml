@@ -36,4 +36,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs-dist  # dumi 默认输出目录
+          publish_dir: ./dist  # dumi 默认输出目录
