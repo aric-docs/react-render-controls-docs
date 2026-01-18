@@ -1,15 +1,15 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  locales: [
-    { id: 'en-US', name: 'English' },
-  ],
+  logo: '/logo.png',
+  locales: [{ id: 'en-US', name: 'English' }],
   resolve: {
     codeBlockMode: 'passive',
   },
   themeConfig: {
     name: 'React Render Controls',
-    description: 'A lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.',
+    description:
+      'A lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.',
     nav: [
       {
         title: 'Guide',
@@ -33,10 +33,13 @@ export default defineConfig({
   styles: [
     `
     .dumi-default-sidebar {
-      --dumi-sidebar-width: 280px !important;
-      width: 280px !important;
-      min-width: 280px !important;
+      --dumi-sidebar-width: 320px !important;
+      width: 320px !important;
+      min-width: 320px !important;
     }
+
+    .dumi-default-header-left {
+      width: 320px !important;
     `,
   ],
 });
