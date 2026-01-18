@@ -27,6 +27,6 @@ Interactive demos for the RenderList component.
 
 <code src="./demos/render-list-all-items.tsx">Scores with Average</code>
 
-## Component Style Rendering
+## Component Style Rendering <Badge type="success">Mui Slots Style</Badge>
 
 <code src="./demos/render-list-component.tsx">Component Style</code>
