@@ -24,13 +24,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'  # dumi 推荐 Node >=18
-          cache: 'npm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build Dumi site
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
