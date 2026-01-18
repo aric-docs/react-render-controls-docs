@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   base: '/react-render-controls-docs/',
   publicPath: '/react-render-controls-docs/',
-  logo: '/logo.png',
+  logo: '/react-render-controls-docs/logo.png',
   locales: [{ id: 'en-US', name: 'English' }],
   resolve: {
     codeBlockMode: 'passive',
