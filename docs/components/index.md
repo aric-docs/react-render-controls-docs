@@ -9,7 +9,7 @@ A collection of React components for declarative rendering control. Simplify con
 
 ## Available Components
 
-### [RenderIf](./render-if)
+### [RenderIf](./render-if.md)
 Conditional rendering component supporting if/else patterns with automatic warning for invalid usage.
 
 **Best for**: Simple conditional rendering, if/else patterns
@@ -21,7 +21,7 @@ Conditional rendering component supporting if/else patterns with automatic warni
 </RenderIf>
 ```
 
-### [RenderList](./render-list)
+### [RenderList](./render-list.md)
 Simplified list rendering component that handles empty states and automatically renders items.
 
 **Best for**: Rendering arrays with empty state handling
@@ -34,7 +34,7 @@ Simplified list rendering component that handles empty states and automatically 
 />
 ```
 
-### [RenderMatch](./render-match)
+### [RenderMatch](./render-match.md)
 Pattern matching component that renders the child matching the given value.
 
 **Best for**: Multi-way conditionals, switch-like patterns
@@ -47,7 +47,7 @@ Pattern matching component that renders the child matching the given value.
 </RenderMatch>
 ```
 
-### [RenderSwitch](./render-switch)
+### [RenderSwitch](./render-switch.md)
 Switch-style conditional rendering with multiple conditions and fallback support.
 
 **Best for**: Complex multi-condition rendering, multiple boolean conditions
