@@ -179,14 +179,13 @@ return <Banner />;
 ### Combine with Other Components
 
 ```tsx
-<RenderList
-  items={items}
-  render={(item) => (
-    <RenderIf when={item.isVisible}>
-      <ItemCard item={item} />
-    </RenderIf>
-  )}
-/>
+<RenderSwitch
+  cases={[items.length > 0, items.length === 0]}
+  fallback={<EmptyState />}
+>
+  <ItemList items={items} />
+  <p>No items available</p>
+</RenderSwitch>
 ```
 
 ## Development Warnings

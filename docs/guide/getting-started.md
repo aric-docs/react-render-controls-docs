@@ -5,7 +5,7 @@ order: 0
 
 # Getting Started
 
-React Render Controls is a lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.
+React Render Controls is a lightweight, headless React component library for declarative conditional rendering and pattern matching.
 
 ## Installation
 
@@ -47,22 +47,6 @@ function App() {
   <Dashboard />
   <Login />
 </RenderIf>
-```
-
-### List Rendering with RenderList
-
-```tsx
-import { RenderList } from '@jswork/react-render-controls';
-
-function UserList({ users }) {
-  return (
-    <RenderList
-      items={users}
-      render={(user) => <UserCard user={user} />}
-      keyBy="id"
-    />
-  );
-}
 ```
 
 ### Pattern Matching with RenderMatch
@@ -115,9 +99,6 @@ All components are fully typed. Import types as needed:
 
 ```tsx
 import type {
-  RenderListProps,
-  RenderFn,
-  RenderComponentConfig,
   RenderIfProps,
   RenderMatchProps,
   RenderSwitchProps
@@ -126,5 +107,5 @@ import type {
 
 ## Next Steps
 
-- Explore [Component Documentation](/components/render-list) for detailed usage
+- Explore [Component Documentation](/components) for detailed usage
 - Check out [API Reference](/api) for complete type definitions

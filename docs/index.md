@@ -2,7 +2,7 @@
 title: RRC
 hero:
   title: RRC
-  description: A lightweight, headless React component library for declarative conditional rendering, pattern matching, and list mapping.
+  description: A lightweight, headless React component library for declarative conditional rendering and pattern matching.
   actions:
     - text: Get Started
       link: /guide/getting-started
@@ -38,15 +38,12 @@ npm install @jswork/react-render-controls
 ## Quick Start
 
 ```tsx
-import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
+import { RenderIf, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
 
 // Conditional rendering
 <RenderIf when={isLoggedIn}>
   <Dashboard />
 </RenderIf>
-
-// List rendering
-<RenderList items={users} render={(user) => <UserCard user={user} />} keyBy="id" />
 
 // Pattern matching
 <RenderMatch value={status} items={['loading', 'success', 'error']}>

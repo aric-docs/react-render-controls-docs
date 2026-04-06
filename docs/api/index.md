@@ -11,7 +11,6 @@ Complete type definitions and API documentation for all components.
 
 ```tsx
 import {
-  RenderList,
   RenderIf,
   RenderMatch,
   RenderSwitch
@@ -19,64 +18,11 @@ import {
 
 // Types
 import type {
-  RenderListProps,
   RenderIfProps,
   RenderMatchProps,
   RenderSwitchProps
 } from '@jswork/react-render-controls';
 ```
-
-## RenderList
-
-### Props
-
-```tsx
-interface RenderListProps<T = any> {
-  items: readonly T[];
-  render: RenderProp<T>;
-  keyBy?: KeyBy<T>;
-}
-```
-
-### Types
-
-```tsx
-/**
- * Render function signature
- */
-type RenderFn<T> = (
-  item: T,
-  index: number,
-  items: readonly T[]
-) => ReactNode;
-
-/**
- * Component-based render configuration
- */
-interface RenderComponentConfig<P> {
-  component: ElementType<P & { children?: ReactNode }>;
-  dataKey?: string;
-  props?: P;
-}
-
-/**
- * Render prop - either function or component config
- */
-type RenderProp<T> = RenderFn<T> | RenderComponentConfig<any>;
-
-/**
- * Key generation strategy
- */
-type KeyBy<T> = keyof T | ((item: T) => string);
-```
-
-### Type Parameters
-
-| Parameter | Description |
-|-----------|-------------|
-| `T` | The type of items in the array |
-
----
 
 ## RenderIf
 
@@ -191,48 +137,6 @@ Standard React element type for components.
 
 ## Generic Type Examples
 
-### RenderList with Interface
-
-```tsx
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
-
-function UserList({ users }: { users: User[] }) {
-  return (
-    <RenderList<User>
-      items={users}
-      render={(user) => (
-        <div key={user.id}>
-          <span>{user.name}</span>
-          <span>{user.email}</span>
-        </div>
-      )}
-      keyBy="id"
-    />
-  );
-}
-```
-
-### RenderList with Type Inference
-
-```tsx
-function UserList({ users }: { users: User[] }) {
-  return (
-    <RenderList
-      items={users}
-      render={(user) => (
-        // user is automatically inferred as User
-        <UserCard data={user} />
-      )}
-      keyBy="id"
-    />
-  );
-}
-```
-
 ### RenderMatch with Union Types
 
 ```tsx
@@ -277,12 +181,6 @@ All types are exported for use in your code:
 
 ```tsx
 import type {
-  // RenderList types
-  RenderListProps,
-  RenderFn,
-  RenderComponentConfig,
-  RenderProp,
-  KeyBy,
   // RenderIf types
   RenderIfProps,
   // RenderMatch types

@@ -5,7 +5,7 @@ order: 0
 
 # Components Overview
 
-A collection of React components for declarative rendering control. Simplify conditional rendering, list rendering, and pattern matching in your React applications.
+A collection of React components for declarative rendering control. Simplify conditional rendering and pattern matching in your React applications.
 
 ## Available Components
 
@@ -19,19 +19,6 @@ Conditional rendering component supporting if/else patterns with automatic warni
   <Dashboard />
   <Login />
 </RenderIf>
-```
-
-### [RenderList](./render-list.md)
-Simplified list rendering component that handles empty states and automatically renders items.
-
-**Best for**: Rendering arrays with empty state handling
-
-```tsx
-<RenderList
-  items={users}
-  render={(user) => <UserCard key={user.id} user={user} />}
-  empty={<p>No users found</p>}
-/>
 ```
 
 ### [RenderMatch](./render-match.md)
@@ -65,7 +52,6 @@ Switch-style conditional rendering with multiple conditions and fallback support
 | Component | Use Case | Complexity | Flexibility |
 |-----------|----------|------------|-------------|
 | RenderIf | Simple conditions | Low | Limited |
-| RenderList | List rendering | Low | Medium |
 | RenderMatch | Value matching | Medium | Medium |
 | RenderSwitch | Complex patterns | High | High |
 
@@ -78,7 +64,7 @@ npm install @jswork/react-render-controls
 ## Usage
 
 ```tsx
-import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
+import { RenderIf, RenderMatch, RenderSwitch } from '@jswork/react-render-controls';
 ```
 
 ## Choose the Right Component
@@ -87,11 +73,6 @@ import { RenderIf, RenderList, RenderMatch, RenderSwitch } from '@jswork/react-r
 - You have simple true/false conditions
 - You need if/else patterns
 - You want clean, readable conditional rendering
-
-### Use RenderList when:
-- You need to render arrays of data
-- You want automatic empty state handling
-- You need to map over items consistently
 
 ### Use RenderMatch when:
 - You have multiple conditions based on a single value
